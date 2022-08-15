@@ -1,0 +1,15 @@
+/* *{
+    background:url(./restaurant.jpg);
+    background-repeat: no-repeat;
+} */
+.navbar{
+    display: flex;
+   
+}
+
+.icon{
+    left: 0;
+}
+.navUL{
+    
+}
