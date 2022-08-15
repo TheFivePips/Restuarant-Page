@@ -7,7 +7,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
 
-      title: 'Restaurant Page',
+      title: 'Tellas Tacos',
       filename: 'index.html',
       template: 'src/template.html',
 

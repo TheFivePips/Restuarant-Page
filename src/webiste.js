@@ -79,12 +79,17 @@ function createFooter() {
 }
 
 function initializeWebsite() {
-    // put all the static website elements(header,nav, main, footer) onto the page and then load the home page
+    // put all the static website elements(header,nav, main, footer) onto the page and then display the home page
     const contentDiv = document.getElementById('content')
 
     contentDiv.appendChild(createHeader())
     contentDiv.appendChild(createMain())
     contentDiv.appendChild(createFooter())
 
+    // displayHome() import this function from the home js file
+
     // set the home page to active with activebtn()
 }
+
+
+// export initializewebsite function
