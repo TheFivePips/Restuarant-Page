@@ -16,7 +16,7 @@ module.exports = {
   ],
   mode: 'development',
   output: {
-    filename: 'main.js',
+    filename: 'main.[contentHash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
