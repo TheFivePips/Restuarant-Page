@@ -1,4 +1,6 @@
 // this is the base website js page. It will include a header with nav links, a blank body(where the other content will be loaded by other files), and a footer.it will export a function to initialize the website to the index.js file
+import Icon from './assets/forknknife.png'
+import displayHome from './home';
 
 function createHeader() {
     const header = document.createElement('header')
@@ -67,6 +69,8 @@ function createNav(){
     nav.appendChild(contactbtn)
     nav.appendChild(menubtn)
 
+    return nav
+
     
 }
 
@@ -105,10 +109,13 @@ function initializeWebsite() {
     contentDiv.appendChild(createMain())
     contentDiv.appendChild(createFooter())
 
+    // set the first btn with navBtn class to active with activebtn()
+    activeBtn(document.querySelector('.navBtn'))
     // displayHome() import this function from the home js file
+    displayHome()
 
-    // set the home page to active with activebtn()
 }
 
 
 // export initializewebsite function
+export default initializeWebsite;
