@@ -7,6 +7,7 @@
 }
 .icon{
     grid-area: 1/1/2/2;
+    width: 200px;
     border-radius: 40%;
     
 }
