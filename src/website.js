@@ -29,25 +29,37 @@ function createNav(){
     // each of these btns will need an event listener that loads the appropriate js file and marks the page as active
     const homebtn = document.createElement('button')
     homebtn.classList.add('homebtn')
+    homebtn.classList.add('navBtn')
+
     homebtn.textContent = 'Home'
     homebtn.addEventListener("click", function(event) {
         // check for if it is the active page
+        if(event.target.classList.contains('active')) return;
+        activeBtn(homebtn)
         // load home content function here
     })
 
     const contactbtn = document.createElement('button')
     contactbtn.classList.add('contactbtn')
+    contactbtn.classList.add('navBtn')
+
     contactbtn.textContent = 'Contact'
     contactbtn.addEventListener("click", function(event) {
         // check for if it is the active page
+        if(event.target.classList.contains('active')) return;
+        activeBtn(contactbtn)
         // load home content function here
     })
 
     const menubtn = document.createElement('button')
     menubtn.classList.add('menubtn')
+    menubtn.classList.add('navBtn')
+
     menubtn.textContent = 'Menu'
     menubtn.addEventListener("click", function(event) {
-        // check for if it is the active page
+        // check for if it is the active page, if yes, do nothing, if not set it to active
+        if(event.target.classList.contains('active')) return;
+        activeBtn(menubtn)
         // load home content function here
     })
 
@@ -58,9 +70,16 @@ function createNav(){
     
 }
 
-function activeBtn () {
-    // not defined yet
-    // loops through the nav buttons and sets the active class
+function activeBtn(button) {
+    
+    // loops through the nav buttons, removes the active class if its not the button selected and sets the active class on the selected btn
+    const buttons = document.querySelectorAll(".navBtn")
+    buttons.forEach((button) =>{
+        if (button !== this) {
+            button.classList.remove('active')
+        }
+    })
+    button.classList.add('active')
 }
 
 function createMain() {
