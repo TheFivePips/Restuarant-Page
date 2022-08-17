@@ -1,18 +1,57 @@
-/* *{
-    background:url(./restaurant.jpg);
-    background-repeat: no-repeat;
-} */
-.navbar{
-    display: flex;
-   
+.header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: rgb(87, 181, 87);
 }
-
 .icon{
-    left: 0;
-}
-.navUL{
+    grid-area: 1/1/2/2;
+    border-radius: 40%;
     
 }
-.active{
-    /* this is the active css for nav buttons */
+.title{
+    grid-area: 1/2/2/3;
+    
+}
+.navBtn{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.navBtn.active{
+    background-color: rgb(138, 247, 138);
+}
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.tella-smile{
+    grid-area: 1/1/2/2;
+    width: 100%;
+}
+.about{
+    grid-area: 1/2/2/3;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px;
+    line-height: 4;
+
+}
+
+.footer{
+    background-color: rgb(87, 181, 87);
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    
+}
+.gitshoutout{
+    text-decoration: none;
+    justify-self: start;
+    align-self: end;
+    color: lightgray;
 }

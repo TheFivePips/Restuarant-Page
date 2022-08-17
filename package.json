@@ -5,14 +5,12 @@
   "private": true,
   "scripts": {
     "start": "webpack --config webpack.common.js",
-   
-    "watch": "webpack --watch"
+    "watch": "webpack --config webpack.common.js --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.7.1",
-    
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
@@ -21,5 +19,7 @@
     "webpack-dev-server": "^4.10.0",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
 }

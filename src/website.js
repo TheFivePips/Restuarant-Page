@@ -12,6 +12,7 @@ function createHeader() {
 
     const name = document.createElement('h1')
     name.textContent = "Tella's Tacos"
+    name.classList.add('title')
 
     
     header.appendChild(myIcon)
@@ -96,6 +97,16 @@ function createMain() {
 function createFooter() {
     const footer = document.createElement("footer");
     footer.classList.add("footer");
+
+    
+    const gitshoutout = document.createElement('a')
+    gitshoutout.classList.add('gitshoutout')
+    gitshoutout.href = 'https://github.com/TheFivePips'
+    gitshoutout.textContent = 'Check out my github page!'
+    
+   
+    
+    footer.appendChild(gitshoutout)
 //   maybe add some other things in here like an adresss, tm, etc
   
     return footer;
