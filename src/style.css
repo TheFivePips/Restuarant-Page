@@ -13,6 +13,9 @@
 }
 .title{
     grid-area: 1/2/2/3;
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    color: rgb(188, 254, 56);
     
 }
 .navBtn{
