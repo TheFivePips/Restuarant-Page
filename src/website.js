@@ -1,6 +1,8 @@
 // this is the base website js page. It will include a header with nav links, a blank body(where the other content will be loaded by other files), and a footer.it will export a function to initialize the website to the index.js file
 import Icon from './assets/tella-bone2.jpg'
+import displayContact from './contact';
 import displayHome from './home';
+
 
 function createHeader() {
     const header = document.createElement('header')
@@ -40,6 +42,7 @@ function createNav(){
         if(event.target.classList.contains('active')) return;
         activeBtn(homebtn)
         // load home content function here
+        displayHome()
     })
 
     const contactbtn = document.createElement('button')
@@ -51,7 +54,9 @@ function createNav(){
         // check for if it is the active page
         if(event.target.classList.contains('active')) return;
         activeBtn(contactbtn)
-        // load home content function here
+        // load contact content function here
+        displayContact()
+
     })
 
     const menubtn = document.createElement('button')
@@ -63,7 +68,7 @@ function createNav(){
         // check for if it is the active page, if yes, do nothing, if not set it to active
         if(event.target.classList.contains('active')) return;
         activeBtn(menubtn)
-        // load home content function here
+        // load menu content function here
     })
 
     nav.appendChild(homebtn)
