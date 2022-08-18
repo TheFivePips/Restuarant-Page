@@ -21,7 +21,7 @@ function createContact() {
     adress.textContent = 'Address: 123 Sheisalreadyinyourhouse Lane, Everywhere, USA'
 
     const hours = document.createElement('p')
-    hours.textContent = 'Hours of Operation: Open every third half-moon from 4am untill the prophecy is fullfilled.'
+    hours.textContent = 'Hours of Operation: Open every third half-moon from 4am until the prophecy is fullfilled.'
 
     contactInfo.appendChild(phoneNumber)
     contactInfo.appendChild(email)

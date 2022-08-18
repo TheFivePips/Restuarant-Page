@@ -2,6 +2,8 @@
 import Icon from './assets/tella-bone2.jpg'
 import displayContact from './contact';
 import displayHome from './home';
+import displayMenu from './menu';
+
 
 
 function createHeader() {
@@ -69,6 +71,7 @@ function createNav(){
         if(event.target.classList.contains('active')) return;
         activeBtn(menubtn)
         // load menu content function here
+        displayMenu()
     })
 
     nav.appendChild(homebtn)
