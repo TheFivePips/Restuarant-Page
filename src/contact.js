@@ -9,18 +9,19 @@ function createContact() {
     map.classList.add('map')
 
     const contactInfo = document.createElement('div')
+    contactInfo.classList.add('contact-info')
     
     const phoneNumber = document.createElement('p')
-    phoneNumber.textContent = '1-555-666-1234'
+    phoneNumber.textContent = 'Phone: 1-555-666-1234'
 
     const email = document.createElement('p')
-    email.textContent = 'TellasTacos@boglyfe.com'
+    email.textContent = 'Email: TellasTacos@boglyfe.com'
 
     const adress = document.createElement('p')
-    adress.textContent = '123 Sheisalreadyinyourhouse Lane, Everywhere, USA'
+    adress.textContent = 'Address: 123 Sheisalreadyinyourhouse Lane, Everywhere, USA'
 
     const hours = document.createElement('p')
-    hours.textContent = 'Open every third half moon from 4am untill the profecy is completed'
+    hours.textContent = 'Hours of Operation: Open every third half-moon from 4am untill the prophecy is fullfilled.'
 
     contactInfo.appendChild(phoneNumber)
     contactInfo.appendChild(email)
